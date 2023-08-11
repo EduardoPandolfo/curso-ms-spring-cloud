@@ -37,12 +37,6 @@ public class WorkerResource {
     public ResponseEntity<Worker> findById(@PathVariable Long id) {
         logger.info("PORT = " + env.getProperty("local.server.port"));
 
-        try{
-            Thread.sleep(3000L);
-        }catch (Exception e) {
-            e.printStackTrace();
-        }
-
         Optional<Worker> optWorker = repository.findById(id);
 
         return optWorker.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.ok().build());
