@@ -12,7 +12,7 @@
     <artifactId>hr-oauth</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>hr-oauth</name>
-    <description>Autherization server</description>
+    <description>Authorization server</description>
     <properties>
         <java.version>11</java.version>
     </properties>
